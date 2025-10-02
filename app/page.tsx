@@ -7,9 +7,8 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed w-full z-50 bg-black/90 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-white rounded-sm"></div>
-            <span className="text-xl font-bold">Unit Industries Group</span>
+          <div className="flex items-center gap-3">
+            <Image src="/logo.png" alt="Unit Industries Group" width={120} height={40} className="h-10 w-auto" />
           </div>
           <div className="hidden md:flex items-center gap-8">
             <Link href="#services" className="hover:text-gray-300 transition-colors">
@@ -23,12 +22,6 @@ export default function Home() {
             </Link>
             <Link href="#contact" className="hover:text-gray-300 transition-colors">
               Contact
-            </Link>
-            <Link
-              href="#contact"
-              className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full transition-colors"
-            >
-              REQUEST A QUOTE
             </Link>
           </div>
         </div>
@@ -49,12 +42,6 @@ export default function Home() {
             printed circuitry, wire harnessing, and electro/mechanical assembly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="#contact"
-              className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full text-lg font-semibold transition-colors"
-            >
-              REQUEST A QUOTE
-            </Link>
             <Link
               href="#services"
               className="border-2 border-white hover:bg-white hover:text-black px-8 py-4 rounded-full text-lg font-semibold transition-colors"
@@ -212,7 +199,7 @@ export default function Home() {
       {/* Clean Room Section */}
       <section id="cleanroom" className="py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">FDA-Approved Clean Room Facility</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">Clean Room Facility</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="bg-gradient-to-br from-blue-900 to-gray-900 p-8 rounded-lg">
@@ -223,13 +210,6 @@ export default function Home() {
                     <div>
                       <strong className="text-white">Class 100,000 Clean Room</strong>
                       <p className="text-sm">4,800 square feet of controlled environment</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-red-600 font-bold">✓</span>
-                    <div>
-                      <strong className="text-white">FDA-Approved Facility</strong>
-                      <p className="text-sm">Meeting stringent medical industry requirements</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -261,7 +241,7 @@ export default function Home() {
             </div>
             <div>
               <p className="text-lg text-gray-300 mb-6">
-                Our FDA-approved Class 100,000 clean room facility provides exceptional precision and quality
+                Our Class 100,000 clean room facility provides exceptional precision and quality
                 for medical molding projects. With 4,800 square feet of controlled environment, we deliver
                 innovative solutions that meet the most demanding requirements.
               </p>
@@ -284,103 +264,33 @@ export default function Home() {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-black">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Contact Us</h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
-              <div className="space-y-6">
-                <div>
-                  <h4 className="font-bold text-lg mb-2 text-gray-400">Corporate Office</h4>
-                  <p className="text-lg">Unit Industries Group, Inc.</p>
-                  <p className="text-gray-300">3122 South Maple Street</p>
-                  <p className="text-gray-300">Santa Ana, CA 92707</p>
-                  <p className="text-gray-300 mt-2">(714) 751-7084</p>
-                </div>
-
-                <div>
-                  <h4 className="font-bold text-lg mb-2 text-gray-400">Email</h4>
-                  <div className="space-y-2">
-                    <p>
-                      <span className="text-gray-400">Sales:</span>{" "}
-                      <a href="mailto:sales@unitindustriesgroup.com" className="text-red-600 hover:text-red-500">
-                        sales@unitindustriesgroup.com
-                      </a>
-                    </p>
-                    <p>
-                      <span className="text-gray-400">Customer Service:</span>{" "}
-                      <a href="mailto:customerservice@unitindustriesgroup.com" className="text-red-600 hover:text-red-500">
-                        customerservice@unitindustriesgroup.com
-                      </a>
-                    </p>
-                    <p>
-                      <span className="text-gray-400">Accounting:</span>{" "}
-                      <a href="mailto:accounting@unitindustriesgroup.com" className="text-red-600 hover:text-red-500">
-                        accounting@unitindustriesgroup.com
-                      </a>
-                    </p>
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="font-bold text-lg mb-2 text-gray-400">Office Hours</h4>
-                  <p className="text-gray-300">Monday - Friday</p>
-                  <p className="text-gray-300">8:00 AM to 4:00 PM</p>
-                  <p className="text-gray-300">Pacific Standard Time</p>
-                </div>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-12">Contact Us</h2>
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-12 rounded-lg">
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Corporate Office</h3>
+                <p className="text-xl text-gray-300">Unit Industries Group, Inc.</p>
+                <p className="text-lg text-gray-400">3122 South Maple Street</p>
+                <p className="text-lg text-gray-400">Santa Ana, CA 92707</p>
+                <p className="text-lg text-gray-400 mt-3">(714) 751-7084</p>
               </div>
-            </div>
 
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-6">Request a Quote</h3>
-              <form className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-red-600 focus:outline-none"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-red-600 focus:outline-none"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-red-600 focus:outline-none"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Project Details
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-red-600 focus:outline-none"
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-red-600 hover:bg-red-700 px-6 py-3 rounded-full font-semibold transition-colors"
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Email</h3>
+                <a
+                  href="mailto:sales@unitindustriesgroup.com"
+                  className="text-xl text-red-600 hover:text-red-500 transition-colors"
                 >
-                  Submit Request
-                </button>
-              </form>
+                  sales@unitindustriesgroup.com
+                </a>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Office Hours</h3>
+                <p className="text-lg text-gray-300">Monday - Friday</p>
+                <p className="text-lg text-gray-300">8:00 AM to 4:00 PM PST</p>
+              </div>
             </div>
           </div>
         </div>
